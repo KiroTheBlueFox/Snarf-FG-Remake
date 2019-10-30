@@ -42,110 +42,138 @@ body {
 	width: 80px;
 }
 
-.header .ButtonList {
-	display: inline-block;
-	text-align: right;
-	vertical-align: center;
-	position: absolute;
-	right: 50px;
-	top: 15px;
-	transform: translate(50px, 0px);
+
+@media screen and (max-width: 800px) {
+	.header .ButtonList {
+		display: inline-block;
+		text-align: right;
+		vertical-align: center;
+		position: absolute;
+		right: 50px;
+		top: 15px;
+		transform: translate(50px, 0px);
+	}
+
+	.header .ButtonList .Lines .AllLines:hover .Line1 {
+		transform: skewY(-45deg) translate(0px, 12.5px);
+		border-width: 1.5px;
+	}
+	.header .ButtonList .Lines .AllLines:hover .Line2 {
+		border-color: #ffffff00;
+		border-width: 1px;
+	}
+	.header .ButtonList .Lines .AllLines:hover .Line3 {
+		transform: skewY(45deg) translate(0px, -12.5px);
+		border-width: 1.5px;
+	}
+
+	.header .ButtonList .Lines .Links {
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+		margin-right: -50px;
+		width: 150px;
+		height: auto;
+		text-align: right;
+		position: relative;
+		top: 30px;
+		right: -150px;
+		font-size: 24px;
+		background-color: #1c184d;
+	}
+
+	.header .ButtonList .Lines .Links a {
+		display: block;
+		transition: 0.25s;
+		-webkit-transition: 0.25s;
+		-moz-transition: 0.25s;
+		-o-transition: 0.25s;
+		-ms-transition: 0.25s;
+		color: #b6b6b6;
+		text-decoration: none;
+		padding-bottom: 10px;
+	}
+
+	.header .ButtonList .Lines:hover .Links, .header .ButtonList .Lines .Links:hover, .header .ButtonList .Lines .Links a:hover {
+		right: 50px;
+		padding-right: 25px;
+	}
+
+	.header .ButtonList .Lines .Line1 {
+		border-style: solid;
+		border-width: 1px;
+		margin-top: 10px;
+		width: 30px;
+		transition: transform 0.5s;
+		-webkit-transition: transform 0.5s;
+		-moz-transition: transform 0.5s;
+		-o-transition: transform 0.5s;
+		-ms-transition: transform 0.5s;
+	}
+	.header .ButtonList .Lines .Line2 {
+		border-style: solid;
+		border-width: 1px;
+		margin-top: 10px;
+		width: 30px;
+		transition: border-color 0.5s;
+		-webkit-transition: border-color 0.5s;
+		-moz-transition: border-color 0.5s;
+		-o-transition: border-color 0.5s;
+		-ms-transition: border-color 0.5s;
+	}
+	.header .ButtonList .Lines .Line3 {
+		border-style: solid;
+		border-width: 1px;
+		margin-top: 10px;
+		width: 30px;
+		transition: transform 0.5s;
+		-webkit-transition: transform 0.5s;
+		-moz-transition: transform 0.5s;
+		-o-transition: transform 0.5s;
+		-ms-transition: transform 0.5s;
+	}
 }
 
-.header .ButtonList .Lines:hover .Line1 {
-	transform: skewY(-45deg) translate(0px, 12.5px);
-	border-width: 1.5px;
-}
-.header .ButtonList .Lines:hover .Line3 {
-	transform: skewY(45deg) translate(0px, -12.5px);
-	border-width: 1.5px;
-}
-
-.header .ButtonList .Lines .Links {
-	transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	margin-right: -50px;
-	width: 150px;
-	height: auto;
-	text-align: right;
-	position: relative;
-	top: 30px;
-	right: -150px;
-	font-size: 24px;
-	background-color: #1c184d;
-}
-
-.header .ButtonList .Lines .Links a {
-	transition: 0.25s;
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
-	-ms-transition: 0.25s;
-	color: #b6b6b6;
-	text-decoration: none;
-	margin-bottom: 10px;
-}
 .header .ButtonList .Lines .Links a:hover {
 	padding-right: 20px;
+	margin-left: 30px;
 	color: #665b99;
 	text-decoration: none;
 	margin-bottom: 10px;
 }
 
-.header .ButtonList .Lines:hover .Links, .header .ButtonList .Lines .Links:hover, .header .ButtonList .Lines .Links a:hover {
-	right: 50px;
-	padding-right: 25px;
-}
+@media screen and (min-width: 800px) {
+	.header .ButtonList .Lines .Links a {
+		transition: 0.25s;
+		-webkit-transition: 0.25s;
+		-moz-transition: 0.25s;
+		-o-transition: 0.25s;
+		-ms-transition: 0.25s;
+	}
+	
+	.header .ButtonList {
+		display: hidden;
+	}
 
-.header .ButtonList .Lines .Line1 {
-	border-style: solid;
-	border-width: 1px;
-	margin-top: 10px;
-	width: 30px;
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
-	-moz-transition: transform 0.5s;
-	-o-transition: transform 0.5s;
-	-ms-transition: transform 0.5s;
-}
-.header .ButtonList .Lines .Line2 {
-	border-style: solid;
-	border-width: 1px;
-	margin-top: 10px;
-	width: 30px;
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
-	-moz-transition: transform 0.5s;
-	-o-transition: transform 0.5s;
-	-ms-transition: transform 0.5s;
-}
-.header .ButtonList .Lines .Line3 {
-	border-style: solid;
-	border-width: 1px;
-	margin-top: 10px;
-	width: 30px;
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
-	-moz-transition: transform 0.5s;
-	-o-transition: transform 0.5s;
-	-ms-transition: transform 0.5s;
+	.header .ButtonList .Lines .Links {
+		position: absolute;
+		top: 30px;
+		right: 50px;
+	}
+
+	.header .ButtonList .Lines .Links * {
+		display: inline;
+		color: #b6b6b6;
+		text-decoration: none;
+		font-size: 24px;
+	}
 }
 
 .MainPart {
 	margin: 50px;
 	text-align: center;
-}
-
-iframe {
-	width: 70vw;
-	height: 39.375vw;
-	margin-left: 7vw;
-	margin-right: 7vw;
-	border-radius: 30px;
-	box-shadow: 0px 0px 16px 0px #000000;
 }
 
 .text {
@@ -189,21 +217,24 @@ h1 {
 }
 </style>
         <title>Snarf FG - 404</title>
+		<link rel="icon" href="https://github.com/team-project-green/Snarf-FG-website/blob/master/Resources/Icon_T_C.png?raw=true" />
     </head>
 
     <body>
 		<div class="header">
-			<a href="/index.html"><img src="https://github.com/team-project-green/Snarf-FG-website/blob/master/Resources/Icon_T.png?raw=true" /></a>
+			<a href="/index.html"><img src="https://github.com/team-project-green/Snarf-FG-website/blob/master/Resources/Icon_T_C.png?raw=true" /></a>
 			<div class="ButtonList">
 				<div class="Lines" tabindex="0" title="Menu">
-					<div class="Line1"></div>
-					<div class="Line2"></div>
-					<div class="Line3"></div>
+					<div class="AllLines">
+						<div class="Line1"></div>
+						<div class="Line2"></div>
+						<div class="Line3"></div>
+					</div>
 					<div class="Links">
-						<a href="/index.html">Home</a><br />
-						<a href="/Projects/index.html">Projects</a><br />
-						<a href="/About/index.html">About</a><br />
-						<a href="/News/index.html">News</a>
+						<a href="index.html">Home</a>
+						<a href="Projects/index.html">Projects</a>
+						<a href="About/index.html">About</a>
+						<a href="News/index.html">News</a>
 					</div>
 				</div>
 			</div>
