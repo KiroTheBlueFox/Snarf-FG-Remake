@@ -1,0 +1,253 @@
+html {
+	background-color: green;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1.15;
+	perspective: 1000px;
+	color: #b6b6b6;
+	overflow-x: hidden;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+	outline: 0;
+}
+
+.header {
+	background-color: #1c184d;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 0px;
+	height: 84px;
+}
+
+.header a {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.header img {
+	margin-top: 10px;
+	margin-left: 5vw;
+	width: 50px;
+	transition: transform 0.25s;
+	-webkit-transition: transform 0.25s;
+	-moz-transition: transform 0.25s;
+	-o-transition: transform 0.25s;
+	-ms-transition: transform 0.25s;
+}
+
+.header img:hover {
+	transform: scale(1.5);
+}
+
+@media screen and (max-width: 800px) {
+	.header .ButtonList {
+		display: inline-block;
+		text-align: right;
+		vertical-align: center;
+		position: absolute;
+		right: 50px;
+		top: 15px;
+		transform: translate(50px, 0px);
+	}
+
+	.header .ButtonList .Lines .AllLines:hover .Line1 {
+		transform: skewY(-45deg) translate(0px, 12.5px);
+		border-width: 1.5px;
+	}
+	.header .ButtonList .Lines .AllLines:hover .Line2 {
+		border-color: #ffffff00;
+		border-width: 1px;
+	}
+	.header .ButtonList .Lines .AllLines:hover .Line3 {
+		transform: skewY(45deg) translate(0px, -12.5px);
+		border-width: 1.5px;
+	}
+
+	.header .ButtonList .Lines .Links {
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+		margin-right: -50px;
+		width: 150px;
+		height: auto;
+		text-align: right;
+		position: relative;
+		top: 30px;
+		right: -150px;
+		font-size: 24px;
+		background-color: #1c184d;
+	}
+
+	.header .ButtonList .Lines .Links a {
+		display: block;
+		transition: 0.25s;
+		-webkit-transition: 0.25s;
+		-moz-transition: 0.25s;
+		-o-transition: 0.25s;
+		-ms-transition: 0.25s;
+		color: #b6b6b6;
+		text-decoration: none;
+		padding-bottom: 10px;
+	}
+
+	.header .ButtonList .Lines:hover .Links, .header .ButtonList .Lines .Links:hover, .header .ButtonList .Lines .Links a:hover {
+		right: 50px;
+		padding-right: 25px;
+	}
+
+	.header .ButtonList .Lines .Line1 {
+		border-style: solid;
+		border-width: 1px;
+		margin-top: 10px;
+		width: 30px;
+		transition: transform 0.5s;
+		-webkit-transition: transform 0.5s;
+		-moz-transition: transform 0.5s;
+		-o-transition: transform 0.5s;
+		-ms-transition: transform 0.5s;
+	}
+	.header .ButtonList .Lines .Line2 {
+		border-style: solid;
+		border-width: 1px;
+		margin-top: 10px;
+		width: 30px;
+		transition: border-color 0.5s;
+		-webkit-transition: border-color 0.5s;
+		-moz-transition: border-color 0.5s;
+		-o-transition: border-color 0.5s;
+		-ms-transition: border-color 0.5s;
+	}
+	.header .ButtonList .Lines .Line3 {
+		border-style: solid;
+		border-width: 1px;
+		margin-top: 10px;
+		width: 30px;
+		transition: transform 0.5s;
+		-webkit-transition: transform 0.5s;
+		-moz-transition: transform 0.5s;
+		-o-transition: transform 0.5s;
+		-ms-transition: transform 0.5s;
+	}
+}
+
+.header .ButtonList .Lines .Links a:hover {
+	padding-right: 20px;
+	margin-left: 30px;
+	color: #665b99;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+@media screen and (min-width: 800px) {
+	.header .ButtonList .Lines .Links a {
+		transition: 0.25s;
+		-webkit-transition: 0.25s;
+		-moz-transition: 0.25s;
+		-o-transition: 0.25s;
+		-ms-transition: 0.25s;
+	}
+	
+	.header .ButtonList {
+		display: hidden;
+	}
+
+	.header .ButtonList .Lines .Links {
+		position: absolute;
+		top: 30px;
+		right: 5vw;
+	}
+
+	.header .ButtonList .Lines .Links * {
+		display: inline;
+		color: #b6b6b6;
+		text-decoration: none;
+		font-size: 24px;
+	}
+}
+
+.MainPart {
+	text-align: center;
+}
+
+.text {
+	text-align: left;
+	padding-bottom: 130px;
+}
+
+.text .textHeader {
+	background-color: rgb(25, 109, 25);
+	margin: 0px;
+	margin-top: -35px;
+	width: 100%;
+	z-index: -10;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 50px;
+	padding-left: 15vw;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 40px;
+	margin: 0px;
+	padding-top: 50px;
+	padding-left: 15vw;
+	padding-right: 15vw;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 0px;
+	padding-top: 50px;
+	padding-left: 15vw;
+	padding-right: 15vw;
+}
+
+.text p {
+	font-size: 18px;
+	padding-left: 50px;
+	padding-left: 18vw;
+	padding-right: 18vw;
+}
+
+.footer {
+	text-align: center;
+	background-color: rgb(20, 87, 20);
+	width: 100%;
+	height: 95px;
+	padding: 5px;
+	font-size: 14px;
+	position: fixed;
+	bottom: 0;
+}
+
+.footer .ButtonList a img {
+	width: 32px;
+	margin-left: 10px;
+	margin-right: 10px;
+	transition: 0.25s;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	-ms-transition: 0.25s;
+}
+
+.footer .ButtonList a img:hover {
+	transform: scale(2);
+}
